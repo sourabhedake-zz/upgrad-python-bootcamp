@@ -1,27 +1,28 @@
-# Valid triangle
+# Count the digits
 # Description
-# Write a program to accept three sides of a triangle as the input and print whether the triangle is valid or not.
-# (A triangle is valid if the sum of any two sides is greater than the third side.)
+# Write a program to accept a number from the user and count the zeros, odd digits and non-zero even digits from the entered number.
 # ----------------------------------------------------------------------
 # Input:
-# Three sides of a triangle separated by a space
+# A positive integer of n digits
 # Output:
-# Whether the given triangle is "Valid" or "Invalid"
+# Three integers representing the occurrences of zeros, odd digits and non-zero even digits from the entered number.
 # ----------------------------------------------------------------------
 # Sample input:
-# 3 4 5
+# 1030
 # Sample output:
-# Valid
-# ----------------------------------------------------------------------
-# Sample input:
-# 1 4 5
-# Sample output:
-# Invalid
-
-side = map(int, input().split())
-
-side = sorted(side)
-if (side[0] + side[1] > side[2]):
-    print("Valid")
-else:
-    print("Invalid")
+# Number of odd digits: 2
+# Number of non-zero even digits: 0
+# Number of zeros: 2
+n=input()
+z,e,o=0,0,0
+for i in n:
+    if (int(i)==0):
+        z+=1
+    elif int(i)%2 == 0:
+        e+=1
+    else:
+        o+=1
+    
+print ("Number of odd digits:", o)
+print ("Number of non-zero even digits:", e)
+print ("Number of zeros:", z)

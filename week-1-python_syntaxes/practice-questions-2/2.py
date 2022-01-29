@@ -1,31 +1,29 @@
-# ASCII values
+# Character frequency
 # Description
-# Write a program to accept a character and display its next and previous character. 
-# Hint: Make use of Ascii values here.
+# Write a program to accept a string value from the user and accept a char value from the user and find out the total occurrence of the char value in the string value. Note that the count is not case-sensitive
 # ----------------------------------------------------------------------
 # Input:
-# A character
+# A string and a character whose occurrence is to be found
 # Output:
-# Previous character and the next character of the given character
+# An integer
 # ----------------------------------------------------------------------
 # Sample input:
-# D
+# Python Programming
+# P
 # Sample output:
-# C
-# E
+# 2
 # ----------------------------------------------------------------------
 # Sample input:
-# 8
+# This is my first program
+# t
 # Sample output:
-# 7
-# 9
-# ----------------------------------------------------------------------
-# Sample input:
-# @
-# Sample Output: 
-# ?
-# A
+# 2
+input_string=input().lower()
+input_char=input().lower()
+count = 0
 
-a=input()
-print(chr(ord(a[0])-1))
-print(chr(ord(a[0])+1))
+for i in input_string:
+    if i == input_char:
+        count+=1
+
+print(count)

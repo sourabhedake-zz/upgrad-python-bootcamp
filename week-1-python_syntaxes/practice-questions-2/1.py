@@ -1,24 +1,26 @@
-# Digit or Alphabet
+# Multiplication Table
 # Description
-# Write a program to display whether the input is a digit or a letter of the alphabet.
+# Write a program to display the multiplication table of a given number.
 # ----------------------------------------------------------------------
 # Input:
-# A digit or a letter of the alphabet
+# A positive integer
 # Output:
-# Displays whether the given output is an integer or a letter of the alphabet
+# Multiplication table
 # ----------------------------------------------------------------------
 # Sample input:
-# 1
+# 5
 # Sample output:
-# Integer
-# ----------------------------------------------------------------------
-# Sample input:
-# b
-# Sample output:
-# Alphabet
+# 5 * 1 = 5
+# 5 * 2 = 10
+# 5 * 3 = 15
+# 5 * 4 = 20
+# 5 * 5 = 25
+# 5 * 6 = 30
+# 5 * 7 = 35
+# 5 * 8 = 40
+# 5 * 9 = 45
+# 5 * 10 = 50
+n=int(input())
 
-inp=input()
-if (inp[0] >= '0' and inp[0] <= '9'):
-    print("Integer")
-else:
-    print("Alphabet")
+for i in range(1, 11):
+    print(n, "*", i, "=", n*i)

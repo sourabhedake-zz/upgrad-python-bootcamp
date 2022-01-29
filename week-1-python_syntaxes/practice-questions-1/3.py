@@ -1,23 +1,29 @@
-# Sum of digits
+# No Vowels
 # Description
-# Write a program to calculate the sum of the digits of a given number 
+# Write a program to accept a string from the user, delete all vowels from the string and display the result. 
 # ----------------------------------------------------------------------
 # Input:
-# An n digit number
+# A string
 # Output:
-# Sum of the digits
+# A string with vowels removed
 # ----------------------------------------------------------------------
 # Sample input:
-# 983
+# Upgrad
 # Sample output:
-# 20
+# pgrd
 # ----------------------------------------------------------------------
 # Sample input:
-# 5241
+# Python Programming
 # Sample output:
-# 12
-n=input()
-summ = 0 
-for i in n:
-    summ += int(i)
-print (summ)
+# Pythn Prgrmmng
+
+
+s=input()
+f=""
+v="aeiouAEIOU"
+
+for i in s:
+    if i not in v:
+        f+=i
+
+print(f)
