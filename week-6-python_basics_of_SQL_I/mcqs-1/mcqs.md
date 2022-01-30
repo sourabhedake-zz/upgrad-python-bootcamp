@@ -1,15 +1,18 @@
 ## 1 Relational Databases
 Which of the following is not part of the ACID characteristics supported by relational databases?
+
 Result:
 Computational
 Indexed
 
 ## 2 Relational Database
 Which of the following is true with regards to the consistency property supported by all relational databases?
+
 Result: It ensures that a change in any value is consistent with other values at the same instant.
 
 ## 3 Non-Relational Database
 Which of the following properties is most commonly compromised in non-relational databases in favour of the other three in sense of the CAP theorem?
+
 Result: Consistency
 
 ## 4 Missing Values
@@ -47,6 +50,7 @@ Consider two tables 'table_1' and 'table_2' as below
 | 21 |	43 |
 | 20 |	34 |
 | 18 |	46 |
+
 (table_1)
 
 | column_a |	column_b |
@@ -57,6 +61,7 @@ Consider two tables 'table_1' and 'table_2' as below
 | 20 |	NULL |
 | 21 |	9 |
 | 34 |	29 |
+
 (table_2)
 
 How many rows will be part of the output of the following query?
